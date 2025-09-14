@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Top 3 Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,15 +32,23 @@
 
     <!-- DASHBOARD -->
     <div id="dashboard" class="card hidden">
-      <h1>Meine Dateien</h1>
-      <div class="upload-section">
-        <input type="file" id="file-input">
-        <button id="upload-btn">Hochladen</button>
+      <h1>Deine Dateien</h1>
+
+      <!-- Drag & Drop -->
+      <div id="drop-zone" class="drop-zone">
+        <p>Ziehe Dateien hierher oder klicke zum Auswählen</p>
+        <input type="file" id="file-input" multiple>
       </div>
+
+      <!-- Upload Fortschrittsbalken -->
+      <div id="progress-container" class="progress-container"></div>
+
+      <!-- Dateiliste -->
       <div class="file-list">
         <h2>Hochgeladene Dateien</h2>
         <ul id="files-ul"></ul>
       </div>
+
       <button id="logout-btn" class="logout-btn">Logout</button>
     </div>
 

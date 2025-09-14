@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- LOGIN & REGISTER -->
+    <div id="auth-container" class="card">
+      <h1>Salve</h1>
+      <div class="tabs">
+        <button id="login-tab" class="active">Login</button>
+        <button id="register-tab">Register</button>
+      </div>
+
+      <form id="login-form" class="form active">
+        <input type="text" id="login-username" placeholder="Benutzername" required>
+        <input type="password" id="login-password" placeholder="Passwort" required>
+        <button type="submit">Login</button>
+      </form>
+
+      <form id="register-form" class="form">
+        <input type="text" id="register-username" placeholder="Benutzername" required>
+        <input type="password" id="register-password" placeholder="Passwort" required>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="card hidden">
+      <h1>Meine Dateien</h1>
+      <div class="upload-section">
+        <input type="file" id="file-input">
+        <button id="upload-btn">Hochladen</button>
+      </div>
+      <div class="file-list">
+        <h2>Hochgeladene Dateien</h2>
+        <ul id="files-ul"></ul>
+      </div>
+      <button id="logout-btn" class="logout-btn">Logout</button>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

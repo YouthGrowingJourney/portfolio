@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Top 3 Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sigma Ligma Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+<div class="theme-toggle">
+  <button id="toggle-theme">🌙 Dark/Light</button>
+</div>
 
-    <!-- LOGIN & REGISTER -->
-    <div id="auth-container" class="card">
-      <h1>Salve</h1>
-      <div class="tabs">
-        <button id="login-tab" class="active">Login</button>
-        <button id="register-tab">Register</button>
-      </div>
+<div class="container">
 
-      <form id="login-form" class="form active">
-        <input type="text" id="login-username" placeholder="Benutzername" required>
-        <input type="password" id="login-password" placeholder="Passwort" required>
-        <button type="submit">Login</button>
-      </form>
-
-      <form id="register-form" class="form">
-        <input type="text" id="register-username" placeholder="Benutzername" required>
-        <input type="password" id="register-password" placeholder="Passwort" required>
-        <button type="submit">Register</button>
-      </form>
+  <!-- LOGIN & REGISTER -->
+  <div id="auth-container" class="card">
+    <h1>Salve 😩</h1>
+    <div class="tabs">
+      <button id="login-tab" class="active">Login</button>
+      <button id="register-tab">Register</button>
     </div>
 
-    <!-- DASHBOARD -->
-    <div id="dashboard" class="card hidden">
-      <h1>Deine Dateien</h1>
+    <form id="login-form" class="form active">
+      <input type="text" id="login-username" placeholder="Benutzername" required>
+      <input type="password" id="login-password" placeholder="Passwort" required>
+      <button type="submit">Login</button>
+    </form>
 
-      <!-- Drag & Drop -->
-      <div id="drop-zone" class="drop-zone">
-        <p>Ziehe Dateien hierher oder klicke zum Auswählen</p>
-        <input type="file" id="file-input" multiple>
-      </div>
-
-      <!-- Upload Fortschrittsbalken -->
-      <div id="progress-container" class="progress-container"></div>
-
-      <!-- Dateiliste -->
-      <div class="file-list">
-        <h2>Hochgeladene Dateien</h2>
-        <ul id="files-ul"></ul>
-      </div>
-
-      <button id="logout-btn" class="logout-btn">Logout</button>
-    </div>
-
+    <form id="register-form" class="form">
+      <input type="text" id="register-username" placeholder="Benutzername" required>
+      <input type="password" id="register-password" placeholder="Passwort" required>
+      <button type="submit">Register</button>
+    </form>
   </div>
-  <script src="script.js"></script>
+
+  <!-- DASHBOARD -->
+  <div id="dashboard" class="card hidden">
+    <h1>Meine Dateien</h1>
+
+    <div id="drop-zone" class="drop-zone">
+      <p>Ziehe Dateien hierher oder klicke zum Auswählen</p>
+      <input type="file" id="file-input" multiple>
+    </div>
+
+    <div id="progress-container" class="progress-container"></div>
+
+    <div class="file-list">
+      <h2>Hochgeladene Dateien</h2>
+      <ul id="files-ul"></ul>
+    </div>
+
+    <button id="logout-btn" class="logout-btn">Logout</button>
+  </div>
+
+</div>
+<script src="script.js"></script>
 </body>
 </html>
